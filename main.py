@@ -1,9 +1,13 @@
 from Class.Eventos import Eventos
+from Class.Sfx import Sfx
 from config.env import TIMEOUT
 #ID, LECTOR
 #DNI: 1, RFID: 2
 lector = -1
 msg = '' 
+
+sfx = Sfx()
+sfx.start() 
 
 #A modo de prueba!
 id = input('Identificacion: ')
@@ -27,7 +31,7 @@ elif lector == 3:
 #Si msg no esta vacio, mostrar msg
 
 if msg == '':
-    Eventos = Eventos.Eventos()
+    Eventos = Eventos()
     msg = Eventos.registrarEntrada(id, lector)
     print msg
 else:
