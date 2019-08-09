@@ -9,7 +9,7 @@ msg = ''
 sfx = Sfx()
 sfx.start() 
 
-#A modo de prueba!
+#A modo de prueba
 id = input('Identificacion: ')
 lector = input('lector: ')
 
